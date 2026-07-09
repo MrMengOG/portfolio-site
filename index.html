@@ -4,13 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio Site</title>
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="/css/styles.css">
 </head>
 <body>
-    <header class="header">
+    <header class="header" id="header">
         <nav>
             <ul class="header__nav-links">
-                <li><a class="header__nav-link" href="#hero">Home</a></li>
+                <li><a class="header__nav-link" href="#header">Home</a></li>
                 <li><a class="header__nav-link" href="#about">About</a></li>
                 <li><a class="header__nav-link" href="#projects">Projects</a></li>
                 <li><a class="header__nav-link" href="/pages/contact.html">Contact</a></li>
@@ -19,43 +19,45 @@
     </header>
     <main>
         <section class="hero" id="hero">
+            <div class="carousel">
+                <div class="hero__carousel">
+                    <div class="hero__carousel-group1">
+                        <div class="hero__carousel-card"><img class="hero__carousel-card-img" src="/assets/images/Ardiuno.jpg" alt=""></div>
+                        <div class="hero__carousel-card"><img class="hero__carousel-card-img" src="/assets/images/code1.jpg" alt=""></div>
+                    </div>
+                    <div aria-hidden="true" class="hero__carousel-group1">
+                        <div class="hero__carousel-card"><img class="hero__carousel-card-img" src="/assets/images/Ardiuno.jpg" alt=""></div>
+                        <div class="hero__carousel-card"><img class="hero__carousel-card-img" src="/assets/images/code1.jpg" alt=""></div>
+                    </div>
+                </div>
+                <div class="hero__carousel">
+                    <div class="hero__carousel-group2">
+                        <div class="hero__carousel-card"><img class="hero__carousel-card-img" src="/assets/images/video-editing.jpg" alt=""></div>
+                        <div class="hero__carousel-card"><img class="hero__carousel-card-img" src="/assets/images/work.jpg" alt=""></div>
+                    </div>
+                    <div aria-hidden="true" class="hero__carousel-group2">
+                        <div class="hero__carousel-card"><img class="hero__carousel-card-img" src="/assets/images/video-editing.jpg" alt=""></div>
+                        <div class="hero__carousel-card"><img class="hero__carousel-card-img" src="/assets/images/work.jpg" alt=""></div>
+                    </div>
+                </div>
+                <div class="hero__carousel">
+                    <div class="hero__carousel-group1">
+                        <div class="hero__carousel-card"><img class="hero__carousel-card-img" src="/assets/images/code2.jpg" alt=""></div>
+                        <div class="hero__carousel-card"><img class="hero__carousel-card-img" src="/assets/images/robot.jpg" alt=""></div>
+                    </div>
+                    <div aria-hidden="true" class="hero__carousel-group1">
+                        <div class="hero__carousel-card"><img class="hero__carousel-card-img" src="/assets/images/code2.jpg" alt=""></div>
+                        <div class="hero__carousel-card"><img class="hero__carousel-card-img" src="/assets/images/robot.jpg" alt=""></div>
+                    </div>
+                </div>
+            </div>
             <div class="hero__text">
                 <span class="hero__text-main">My name is Mantas</span><br>
                 <span class="hero__text-main">I am a</span>
                 <span class="hero__text-main" id="hero__text--changing"></span>
             </div>
-            <div class="hero__carousel">
-                <div class="hero__carousel-group">
-                    <div class="hero__carousel-card"><img src="/assets/images/Ardiuno.jpg" alt=""></div>
-                    <div class="hero__carousel-card"><img src="/assets/images/code1.jpg" alt=""></div>
-                </div>
-                <div aria-hidden="true" class="hero__carousel-group">
-                    <div class="hero__carousel-card"><img src="/assets/images/Ardiuno.jpg" alt=""></div>
-                    <div class="hero__carousel-card"><img src="/assets/images/code1.jpg" alt=""></div>
-                </div>
-            </div>
-            <div class="hero__carousel">
-                <div class="hero__carousel-group">
-                    <div class="hero__carousel-card"><img src="/assets/images/video-editing.jpg" alt=""></div>
-                    <div class="hero__carousel-card"><img src="/assets/images/work.jpg" alt=""></div>
-                </div>
-                <div aria-hidden="true" class="hero__carousel-group">
-                    <div class="hero__carousel-card"><img src="/assets/images/video-editing.jpg" alt=""></div>
-                    <div class="hero__carousel-card"><img src="/assets/images/work.jpg" alt=""></div>
-                </div>
-            </div>
-            <div class="hero__carousel">
-                <div class="hero__carousel-group">
-                    <div class="hero__carousel-card"><img src="/assets/images/code2.jpg" alt=""></div>
-                    <div class="hero__carousel-card"><img src="/assets/images/robot.jpg" alt=""></div>
-                </div>
-                <div aria-hidden="true" class="hero__carousel-group">
-                    <div class="hero__carousel-card"><img src="/assets/images/code2.jpg" alt=""></div>
-                    <div class="hero__carousel-card"><img src="/assets/images/robot.jpg" alt=""></div>
-                </div>
-            </div>
-            <div class="hero__end-block"></div>
         </section>
+        <div class="hero__end-block"></div>
         <section class="about" id="about">
             <div class="about-area">
                 <div class="about__image">
@@ -90,8 +92,8 @@
     <footer class="footer">
         <span class="footer__header">Lets connect</span>
         <ul class="footer__social-links">
-            <li><a class="footer__social-link" href="https://www.linkedin.com/in/mantas-karoblius/" target="_blank" rel="noopener norefferer"><img src="/assets/icons/LinkedIn_icon.webp" alt="linkedIn-icon"></a></li>
-            <li><a class="footer__social-link" href="https://github.com/MrMengOG" target="_blank" rel="noopener norefferer"><img src="/assets/icons/github-white-icon.webp" alt="gitHub-icon"></a></li>
+            <li><a class="footer__social-link" href="https://www.linkedin.com/in/mantas-karoblius/" target="_blank" rel="noopener norefferer"><img class="footer__social-icon" src="/assets/icons/LinkedIn_icon.webp" alt="linkedIn-icon"></a></li>
+            <li><a class="footer__social-link" href="https://github.com/MrMengOG" target="_blank" rel="noopener norefferer"><img class="footer__social-icon" src="/assets/icons/github-white-icon.webp" alt="gitHub-icon"></a></li>
         </ul>
         <span class="footer__coppy">©2026 all rights reserved by Mantas Studio</span>
     </footer>

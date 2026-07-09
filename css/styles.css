@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Iosevka+Charon:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+:root {
+    --defFont: "DM Sans", sans-serif;
+
+    --backgroundColor: #0f0f0f;
+    --areaBackColor: #171717;
+    --accentColor: #DA0037;
+    --textColor: #ffffff;
+
+    --text-sm: 0.875rem;
+    --text-base: 1rem;
+    --text-lg: 1.5rem;
+    --text-xl: 4rem;
+
+    --space-sm: 0.75rem;
+    --space-md: 1rem;
+    --space-lg: 2rem;
+
+    --spaceFromSide: 5rem;
+
+    --sectionWidth: calc(100dvw - 2*var(--spaceFromSide));
+}
+
+body {
+    font-family: var(--defFont);
+    background-color: var(--backgroundColor);
+    color: var(--textColor);
+
+    margin: 0;
+}
+
+.header {
+    background-color: var(--areaBackColor);
+    width: 100%;
+    padding: var(--space-sm) 0px;
+}
+
+ul {
+    list-style: none;
+}
+
+.header__nav-links {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+.header__nav-link {
+    font-size: var(--text-base);
+    color: var(--textColor);
+    margin: 0 var(--space-lg);
+    width: 7ch;
+}
+
+a {
+  text-decoration: none;
+}
+
+.footer__social-icon {
+    width: 20px;
+}
+
+.hero {
+    margin: 0 var(--spaceFromSide);
+    width: var(--sectionWidth);
+    position: relative;
+    height: calc(100dvh - 2*var(--space-sm) - var(--text-base));
+}
+
+.carousel {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.hero__carousel {
+    height: 100%;
+    width: calc(var(--sectionWidth)/3);
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+    overflow: hidden;
+}
+
+.hero__carousel::-webkit-scrollbar {
+    display: none;
+}
+
+.hero__carousel-group1 {
+    width: 100%;
+    animation: spin1 20s infinite linear;
+}
+
+.hero__carousel-group2 {
+    width: 100%;
+    animation: spin2 20s infinite linear;
+}
+
+.hero__carousel-card {
+    flex: 0 0 0;
+    width: 100%;
+}
+
+.hero__carousel-card-img {
+    opacity: 0.2;
+    display: block;
+    width: 100%;
+}
+
+@keyframes spin1 {
+    from {
+        translate: 0;
+    }
+    to {
+        translate: 0 -100%;
+    }
+}
+
+@keyframes spin2 {
+    from {
+        translate: 0 -100%;
+    }
+    to {
+        translate: 0;
+    }
+}
+
+.hero__text {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero__text-main {
+    font-size: var(--text-xl);
+    text-shadow: 2px 2px 4px black;
+}
+
+.hero__end-block {
+    width: 100%;
+    background-color: var(--areaBackColor);
+    height: calc(2*var(--space-sm) + var(--text-base));
+}
