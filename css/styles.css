@@ -5,6 +5,7 @@
 
     --backgroundColor: #0f0f0f;
     --areaBackColor: #171717;
+    --lightColor: #1d1d1d;
     --accentColor: #DA0037;
     --textColor: #ffffff;
 
@@ -92,12 +93,12 @@ a {
 
 .hero__carousel-group1 {
     width: 100%;
-    animation: spin1 20s infinite linear;
+    animation: spin1 30s infinite linear;
 }
 
 .hero__carousel-group2 {
     width: 100%;
-    animation: spin2 20s infinite linear;
+    animation: spin2 30s infinite linear;
 }
 
 .hero__carousel-card {
@@ -196,6 +197,7 @@ a {
     background-color: var(--accentColor);
     width: fit-content;
     border: 2px solid var(--accentColor);
+    border-radius: 10px;
 }
 
 .btn:hover {
@@ -204,4 +206,47 @@ a {
 
 #about__btn {
     margin-left: auto;
+}
+
+.projects {
+    margin: 0 var(--spaceFromSide);
+    margin-top: var(--space-lg);
+    width: var(--sectionWidth); 
+}
+
+.project__area {
+    background-color: var(--areaBackColor);
+    padding: var(--space-md);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.projects__display {
+    margin: var(--space-md);
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--space-lg);
+}
+
+.projects__card-img {
+    width: 100%;
+}
+
+.projects__card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--lightColor);
+    border-radius: 10px;
+}
+
+.projects__card-header {
+    font-size: var(--space-md);
+    margin: var(--space-sm) 0;
+}
+
+.projects__card-disc {
+    font-size: var(--text-base);
+    margin: var(--space-sm) 0;
 }
