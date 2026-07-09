@@ -9,7 +9,7 @@
     --accentColor: #DA0037;
     --textColor: #ffffff;
 
-    --text-sm: 0.875rem;
+    --text-md: 2rem;
     --text-base: 1.25rem;
     --text-lg: 3rem;
     --text-xl: 4rem;
@@ -53,6 +53,10 @@ ul {
     color: var(--textColor);
     margin: 0 var(--space-lg);
     width: 7ch;
+}
+
+.header__nav-link:hover {
+    font-size: calc(var(--text-base) + 0.1rem);
 }
 
 a {
@@ -201,7 +205,7 @@ a {
 }
 
 .btn:hover {
-    transform: scale(1.01);
+    transform: scale(1.03);
 }
 
 #about__btn {
@@ -242,7 +246,7 @@ a {
 }
 
 .projects__card-header {
-    font-size: var(--space-md);
+    font-size: var(--text-md);
     margin: var(--space-sm) 0;
 }
 
@@ -250,3 +254,34 @@ a {
     font-size: var(--text-base);
     margin: var(--space-sm) 0;
 }
+
+.footer {
+    margin-top: var(--space-lg);
+    background-color: var(--areaBackColor);
+    width: 100%;
+    padding: var(--space-sm) 0px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+ .footer__header {
+    font-size: var(--text-md);
+ }
+
+ .footer__social-links {
+    display: flex;
+    justify-content: center;
+ }
+
+ .footer__social-link {
+    font-size: var(--text-base);
+    color: var(--accentColor);
+    margin: 0 var(--space-md);
+    width: 7ch;
+ }
+
+ .footer__social-link:hover {
+    text-decoration: underline;
+ }
