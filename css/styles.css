@@ -145,6 +145,7 @@ a {
 .hero__text-main {
     font-size: var(--text-xl);
     text-shadow: 2px 2px 4px black;
+    text-align: left;
 }
 
 .hero__end-block {
@@ -285,3 +286,44 @@ a {
  .footer__social-link:hover {
     text-decoration: underline;
  }
+
+.hero_text-2 {
+    display: flex;
+    gap: 1ch;
+}
+
+#hero__text--changing {
+    color: var(--accentColor);
+}
+ #hero__text--changing::before {
+    content: "Entreprenuer";
+    animation: changeWords 20s infinite linear;
+ }
+
+  #hero__text--changing::after {
+    content: "";
+    animation: cursor 1.5s linear infinite;
+  }
+
+ @keyframes changeWords {
+    0%, 25% {
+        content: "Entreprenuer";
+    }
+
+    26%, 50% {
+        content: "Web developer";
+    }
+
+    51%, 75% {
+        content: "Engineer";
+    }
+    76%, 100% {
+        content: "Content creator";
+    }
+ }
+
+ @keyframes cursor{
+    to{
+        border-left: 3px solid var(--accentColor);
+    }
+}
