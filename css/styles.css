@@ -9,13 +9,13 @@
     --textColor: #ffffff;
 
     --text-sm: 0.875rem;
-    --text-base: 1rem;
-    --text-lg: 1.5rem;
+    --text-base: 1.25rem;
+    --text-lg: 3rem;
     --text-xl: 4rem;
 
     --space-sm: 0.75rem;
-    --space-md: 1rem;
-    --space-lg: 2rem;
+    --space-md: 2rem;
+    --space-lg: 5rem;
 
     --spaceFromSide: 5rem;
 
@@ -146,4 +146,62 @@ a {
     width: 100%;
     background-color: var(--areaBackColor);
     height: calc(2*var(--space-sm) + var(--text-base));
+}
+
+.about {
+    margin: 0 var(--spaceFromSide);
+    margin-top: var(--space-lg);
+    width: var(--sectionWidth); 
+}
+
+.about-area {
+    display: flex;
+    background-color: var(--areaBackColor);
+    padding: var(--space-md);
+    gap: var(--space-md);
+}
+
+#profile-img {
+    display: block;
+    margin: 0;
+    height: 50dvh;
+}
+
+.about__text {
+    display: flex;
+    flex-direction: column;
+}
+
+.section-header {
+    font-size: var(--text-lg);
+}
+
+.about__text-bio {
+    font-size: var(--text-base);
+}
+
+.about__right {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    color: var(--textColor);
+    font-size: var(--text-base);
+    background-color: var(--accentColor);
+    width: fit-content;
+    border: 2px solid var(--accentColor);
+}
+
+.btn:hover {
+    transform: scale(1.01);
+}
+
+#about__btn {
+    margin-left: auto;
 }
