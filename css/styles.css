@@ -287,6 +287,12 @@ a {
     text-decoration: underline;
  }
 
+ .footer__coppy {
+    margin: 0;
+    padding: 0;
+    font-size: var(--space-base);
+ }
+
 .hero_text-2 {
     display: flex;
     gap: 1ch;
@@ -326,4 +332,85 @@ a {
     to{
         border-left: 3px solid var(--accentColor);
     }
+}
+
+.contact {
+    margin: 0 var(--spaceFromSide);
+    margin-top: var(--space-lg);
+    width: var(--sectionWidth);
+    min-height: calc(100dvh - 4*var(--space-sm) - 2 * var(--text-base) - 2*var(--space-lg) - var(--text-md) - 2*var(--space-md) - 0.7rem);  
+}
+
+.contact-form-area {
+    background-color: var(--areaBackColor);
+    padding: var(--space-md);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact-form__header {
+    font-size: var(--text-lg);
+    margin-bottom: var(--space-md);
+}
+
+.contact-form {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+        "name last"
+        "email email"
+        "message message"
+        "btn btn";
+}
+
+#name_field {
+    grid-area: name;
+}
+
+#last_name_field {
+    grid-area: last;
+}
+
+#email_field {
+    grid-area: email;
+}
+
+#message_field {
+    grid-area: message;
+    
+}
+
+.contact-form__action {
+    grid-area: btn;
+}
+
+
+.contact-form__input {
+    font-size: var(--text-base);
+    font-family: var(--defFont);
+    color: var(--textColor);
+    width: 100%;
+    background-color: var(--lightColor);
+    border: 2px solid var(--lightColor);
+}
+
+#message-input {
+    min-height: 80px;
+    resize: none;
+    overflow: hidden;
+}
+
+.contact-form__label {
+    font-size: var(--text-md);
+}
+
+.contact-form__input:focus {
+    outline: none;
+    border-color: var(--accentColor);
+}
+
+.contact-form_submit-btn {
+    width: 100%;
 }

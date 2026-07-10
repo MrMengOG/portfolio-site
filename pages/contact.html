@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact me</title>
+    <link rel="stylesheet" href="../css/styles.css">
 </head>
 <body>
     <header class="header">
@@ -16,27 +17,26 @@
             </ul>
         </nav>
     </header>
-    <main>
+    <main class="contact">
         <div class="contact-form-area">
             <header class="contact-form__header">Contact form</header>
             <form class="contact-form">
-                <div class="contact-form__input-field">
+                <div class="contact-form__input-field" id="name_field">
                     <label class="contact-form__label" for="name-input">Name</label>
                     <input class="contact-form__input" type="text"  id="name-input" required>
                 </div>
-                <div class="contact-form__input-field">
+                <div class="contact-form__input-field" id="last_name_field">
                     <label class="contact-form__label" for="last-name-input">Last name</label>
                     <input class="contact-form__input" type="text"  id="last-name-input" required>
                 </div>
-                <div class="contact-form__input-field">
+                <div class="contact-form__input-field" id="email_field">
                     <label class="contact-form__label" for="email-input">Email</label>
                     <input class="contact-form__input" type="email"  id="email" required>
                 </div>
-                <div class="contact-form__input-field">
-                    <label class="contact-form__label" for="message-input">Your massage</label>
-                    <input class="contact-form__input" type="text"  id="message-input" required>
+                <div class="contact-form__input-field" id="message_field">
+                    <label class="contact-form__label" for="message-input">Your message</label>
+                    <textarea id="message-input" class="contact-form__input" required></textarea>
                 </div>
-
                 <div class="contact-form__action">
                     <button class="contact-form_submit-btn btn">Submit</button>
                 </div>
@@ -46,10 +46,11 @@
     <footer class="footer">
         <span class="footer__header">Lets connect</span>
         <ul class="footer__social-links">
-            <li><a class="footer__social-link" href="https://www.linkedin.com/in/mantas-karoblius/" target="_blank" rel="noopener norefferer"><img src="/assets/icons/LinkedIn_icon.webp" alt="linkedIn-icon"></a></li>
-            <li><a class="footer__social-link" href="https://github.com/MrMengOG" target="_blank" rel="noopener norefferer"><img src="/assets/icons/github-white-icon.webp" alt="gitHub-icon"></a></li>
+            <li><a class="footer__social-link" href="https://www.linkedin.com/in/mantas-karoblius/" target="_blank" rel="noopener norefferer"><img class="footer__social-icon" src="../assets/icons/linkedin-icon.webp" alt="linkedIn-icon">  LinkedIn</a></li>
+            <li><a class="footer__social-link" href="https://github.com/MrMengOG" target="_blank" rel="noopener norefferer"><img class="footer__social-icon" src="../assets/icons/github-white-icon.webp" alt="gitHub-icon">  GitHub</a></li>
         </ul>
         <span class="footer__coppy">©2026 all rights reserved by Mantas Studio</span>
     </footer>
+    <script src="../js/contact-form.js"></script>
 </body>
 </html>
