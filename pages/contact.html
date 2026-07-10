@@ -9,8 +9,13 @@
 <body>
     <header class="header">
         <nav>
-            <ul class="header__nav-links">
-                <li><a class="header__nav-link" href="../index.html#hero">Home</a></li>
+            <button id="header__menu-btn" aria-label="Toggle menu" aria-expanded="false">
+                <span class="header__hamburger-icon"></span>
+                <span class="header__hamburger-icon"></span>
+                <span class="header__hamburger-icon"></span>
+            </button>
+            <ul class="header__nav-links" id="header__menu">
+                <li><a class="header__nav-link" href="../index.html#header">Home</a></li>
                 <li><a class="header__nav-link" href="../index.html#about">About</a></li>
                 <li><a class="header__nav-link" href="../index.html#projects">Projects</a></li>
                 <li><a class="header__nav-link" href="#header">Contact</a></li>
@@ -51,6 +56,6 @@
         </ul>
         <span class="footer__coppy">©2026 all rights reserved by Mantas Studio</span>
     </footer>
-    <script src="../js/contact-form.js"></script>
+    <script type="module" src="../js/contact.js"></script>
 </body>
 </html>
