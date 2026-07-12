@@ -78,6 +78,8 @@ a {
     width: var(--sectionWidth);
     position: relative;
     height: calc(98dvh - 2*var(--space-sm) - var(--text-base));
+
+    scroll-margin-top: 1000px;
 }
 
 .carousel {
@@ -165,6 +167,8 @@ a {
     margin: 0 var(--spaceFromSide);
     margin-top: var(--space-lg);
     width: var(--sectionWidth); 
+
+    scroll-margin-top: var(--space-lg);
 }
 
 .about-area {
@@ -454,6 +458,7 @@ a {
 }
 
 .hamburger-menu-active {
+    opacity: 0.8;
     z-index: 2;
     opacity: 1;
     margin: 0;
@@ -556,17 +561,19 @@ a {
     }
 
     .header {
+        opacity: 0.8;
         height: 40px;
         box-sizing: border-box;
+        position: fixed;
+        z-index: 3;
     }
 
     .hamburger-menu-active {
         visibility: visible;
     }
 
-    .header {
-        position: fixed;
-        z-index: 3;
+    .contact {
+        margin-top: calc(var(--space-lg) + 40px);
     }
 }
 
