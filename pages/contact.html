@@ -25,25 +25,29 @@
     <main class="contact">
         <div class="contact-form-area">
             <header class="contact-form__header">Contact form</header>
-            <form class="contact-form">
+            <form class="contact-form" id="form">
                 <div class="contact-form__input-field" id="name_field">
                     <label class="contact-form__label" for="name-input">Name</label>
-                    <input class="contact-form__input" type="text"  id="name-input" required>
+                    <input class="contact-form__input" type="text"  id="name-input">
+                    <div class="contact-form-error"></div>
                 </div>
                 <div class="contact-form__input-field" id="last_name_field">
                     <label class="contact-form__label" for="last-name-input">Last name</label>
-                    <input class="contact-form__input" type="text"  id="last-name-input" required>
+                    <input class="contact-form__input" type="text"  id="last-name-input">
+                    <div class="contact-form-error"></div>
                 </div>
                 <div class="contact-form__input-field" id="email_field">
                     <label class="contact-form__label" for="email-input">Email</label>
-                    <input class="contact-form__input" type="email"  id="email" required>
+                    <input class="contact-form__input" type="text"  id="email">
+                    <div class="contact-form-error"></div>
                 </div>
                 <div class="contact-form__input-field" id="message_field">
                     <label class="contact-form__label" for="message-input">Your message</label>
-                    <textarea id="message-input" class="contact-form__input" required></textarea>
+                    <textarea id="message-input" class="contact-form__input"></textarea>
+                    <div class="contact-form-error"></div>
                 </div>
                 <div class="contact-form__action">
-                    <button class="contact-form_submit-btn btn">Submit</button>
+                    <button type="submit" class="contact-form_submit-btn btn">Submit</button>
                 </div>
             </form>
         </div>

@@ -9,6 +9,9 @@
     --accentColor: #DA0037;
     --textColor: #ffffff;
 
+    --successColor: #17b000;
+    --errorColor: #DA0037;
+
     --text-small: 1.25rem;
     --text-md: 2rem;
     --text-base: 1.25rem;
@@ -35,16 +38,21 @@ body {
     margin: 0;
 }
 
-.header {
-    background-color: var(--areaBackColor);
-    width: 100%;
-    padding: var(--space-sm) 0px;
+a {
+  text-decoration: none;
 }
 
 ul {
     list-style: none;
 }
 
+/*HEADER*/
+
+.header {
+    background-color: var(--areaBackColor);
+    width: 100%;
+    padding: var(--space-sm) 0px;
+}
 .header__nav-links {
     visibility: visible;
     display: flex;
@@ -65,13 +73,8 @@ ul {
     border-bottom: 0.1rem solid var(--textColor);
 }
 
-a {
-  text-decoration: none;
-}
 
-.footer__social-icon {
-    width: 20px;
-}
+/*HERO*/
 
 .hero {
     margin: 0 var(--spaceFromSide);
@@ -163,6 +166,7 @@ a {
     height: calc(2*var(--space-sm) + var(--text-base));
 }
 
+/*ABOUT SECTION*/
 .about {
     margin: 0 var(--spaceFromSide);
     margin-top: var(--space-lg);
@@ -224,6 +228,7 @@ a {
     margin-left: auto;
 }
 
+/*PROJECTS SECTION*/
 .projects {
     margin: 0 var(--spaceFromSide);
     margin-top: var(--space-lg);
@@ -268,6 +273,7 @@ a {
     padding: 0 var(--space-sm);
 }
 
+/*FOOTER*/
 .footer {
     margin-top: var(--space-lg);
     background-color: var(--areaBackColor);
@@ -277,6 +283,10 @@ a {
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+.footer__social-icon {
+    width: 20px;
 }
 
  .footer__header {
@@ -305,6 +315,7 @@ a {
     font-size: var(--text-small);
  }
 
+/*Hero changing text*/
 .hero_text-2 {
     display: flex;
     gap: 1ch;
@@ -346,6 +357,7 @@ a {
     }
 }
 
+/*CONTACT FORM STYLING*/
 .contact {
     margin: 0 var(--spaceFromSide);
     margin-top: var(--space-lg);
@@ -406,6 +418,8 @@ a {
     font-size: var(--text-base);
     font-family: var(--defFont);
     color: var(--textColor);
+    padding: var(--space-sm);
+    box-sizing: border-box;
     width: 100%;
     background-color: var(--lightColor);
     border: 2px solid var(--lightColor);
@@ -428,6 +442,21 @@ a {
 
 .contact-form_submit-btn {
     width: 100%;
+}
+
+/*Contact form validation*/
+
+.contact-form__input.success {
+    border-color: var(--successColor);
+}
+
+.contact-form__input.error {
+    border-color: var(--errorColor);
+}
+
+.contact-form-error {
+    color: var(--errorColor);
+    font-size: var(--text-small);
 }
 
 /*Hamburger menu*/
@@ -602,4 +631,8 @@ a {
         --spaceFromSide: 2rem;
     }
 
+}
+
+@view-transition {
+    navigation: auto;
 }
